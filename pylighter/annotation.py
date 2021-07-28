@@ -238,7 +238,7 @@ class Annotation:
         )
 
         # Remove loader
-        display_helper.remove_loader(loader)
+#         display_helper.remove_loader(loader)
 
         # Prepare toast for on_save
         display_helper.prepare_toast()
