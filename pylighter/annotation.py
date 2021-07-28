@@ -187,7 +187,7 @@ class Annotation:
         self.additional_outputs_elements_displays = None
 
         # Display loader until the display is finished
-        loader = display_helper.display_loader()
+#         loader = display_helper.display_loader()
 
         # Load current core if not preloaded
         self._async_load(self.preloaded_displays.current, 0)
