@@ -121,6 +121,14 @@ class Annotation:
         # Start annotating
         self._annotate()
 
+        
+    def reannotate(self, index=0):
+        self.current_index = index
+        self.start_index = 0
+        # display_helper.start_display() # Uncomment if you want a new window for annot
+        self.preloaded_displays = utils_pylighter.PreloadedDisplays()
+        self._annotate()
+    
     def _init_labels(self, labels):
         """
         Init labels as "empty" if not labels are given
