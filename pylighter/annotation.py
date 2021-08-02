@@ -180,7 +180,7 @@ class Annotation:
         """
 
         # Init variables specific to the current document
-        self.document = self.corpus[self.current_index]
+        self.document = self.corpus.iloc[self.current_index]
         self.chunks = Chunks(labels=self.labels[self.current_index])
         self.selected_labeliser = self.labels_names[0]
         self.label_start_index = None
@@ -277,7 +277,7 @@ class Annotation:
                 target=display_helper.preload_core,
                 kwargs={
                     "obj": preloaded,
-                    "document": self.corpus[self.current_index + direction],
+                    "document": self.corpus.iloc[self.current_index + direction],
                     "char_params": self.char_params,
                     "char_on_click": self._labelise,
                     "labels_names": self.labels_names,
