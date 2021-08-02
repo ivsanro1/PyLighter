@@ -119,7 +119,7 @@ class Annotation:
         self.preloaded_displays = utils.PreloadedDisplays()
 
         # Start annotating
-        self._annotate()
+        #self._annotate()
 
         
     def reannotate(self, index=0):
